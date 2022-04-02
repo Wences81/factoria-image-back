@@ -5,7 +5,7 @@ const { joiSchema } = require("../../models/image")
 
 const router = express.Router();
 
-router.get('/', ctrlWrapper(ctrl.getAll));
+router.get('/', ctrlWrapper(ctrl.listImages));
 
 router.post('/', validation(joiSchema), ctrlWrapper(ctrl.addImage))
 
