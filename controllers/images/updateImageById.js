@@ -10,7 +10,7 @@ const updateImageById = async (req, res) => {
     res.json({
         status: 'success',
         code: 200,
-        message: 'image deleted',
+        message: 'image updated',
         data: {
             result
         }
