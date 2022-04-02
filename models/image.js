@@ -22,5 +22,5 @@ const Image = model('image', imageSchema)
 
 module.exports = {
     Image,
-    joiSchema,
+    joiSchema
 }
