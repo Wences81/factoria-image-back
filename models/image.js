@@ -1,5 +1,6 @@
-const { Schema, model } = require('mongoose');
-const { Joi } = require('joi');
+const { Schema, model } = require('mongoose')
+const Joi = require('joi')
+
 
 const imageSchema = Schema({
     name: {
@@ -15,9 +16,11 @@ const joiSchema = Joi.object({
     image: Joi.string().required(),
 })
 
+
+
 const Image = model('image', imageSchema)
 
 module.exports = {
     Image,
-    joiSchema
+    joiSchema,
 }
