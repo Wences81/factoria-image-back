@@ -17,8 +17,12 @@ const joiSchema = Joi.object({
 })
 
 
-
 const Image = model('image', imageSchema)
+
+
+imageSchema.methods.setImgUrl = function setImgUrl() {
+
+}
 
 module.exports = {
     Image,
