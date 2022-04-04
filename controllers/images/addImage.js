@@ -3,6 +3,7 @@ const { NotFound } = require('http-errors')
 
 const addImage = async (req, res) => {
     const result = Image.create(req.body)
+
     if (!result) {
         throw new NotFound('missing required name field')
     }
